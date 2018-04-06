@@ -1,0 +1,54 @@
+
+*************PINES DE ESQUEMATICO-> rotator_pins.h*********************
+
+>Sensores de Posición: 
+#define FEATURE_AZ_POSITION_POTENTIOMETER
+#define FEATURE_EL_POSITION_POTENTIOMETER
+#define rotator_analog_az A0		//Para la entrada de 0-5V que viene del rotor
+#define rotator_analog_el A1		//Para la entrada de 0-5V que viene del rotor
+
+>Botones de control manual
+#define button_cw A2
+#define button_ccw A3
+#define button_up A4
+#define button_down A5
+
+->Rotación de rotores
+#define rotate_cw 6
+#define rotate_ccw 7
+#define rotate_up 8
+#define rotate_down 9
+#define azimuth_speed_voltage
+*************************************************************************
+
+
+
+
+
+
+********************OTRAS DEFINICIONES QUE HAY QUE REVISAR*************************
+
+>Computer Interface (rotor_features.h):
+//#define FEATURE_YAESU_EMULATION
+#define OPTION_GS_232B_EMULATION
+//#define FEATURE_EASYCOM_EMULATION
+
+>Azimuth and Elevation Rotators :
+#define FEATURE_ELEVATION_CONTROL
+
+>COTS:
+//#define HARDWARE_EA4TX_ARS_USB//Esteban    
+//#define HARDWARE_WB6KCN//Esteban
+OPTION_EXTERNAL_ANALOG_REFERENCE //para usar con la referencia del arduino 
+
+
+>ACELEROMETRO:
+//#define FEATURE_EL_POSITION_ADXL345_USING_ADAFRUIT_LIB
+//#define FEATURE_EL_POSITION_ADXL345_USING_LOVE_ELECTRON_LIB
+
+>ENCODER:
+//#define FEATURE_AZ_POSITION_ROTARY_ENCODER
+
+PAGINA 21
+*****************************************************************************
+
