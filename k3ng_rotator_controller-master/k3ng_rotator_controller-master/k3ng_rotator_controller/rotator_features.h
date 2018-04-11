@@ -85,15 +85,15 @@
 /* preset rotary encoder features and options */
 // #define FEATURE_AZ_PRESET_ENCODER            // Uncomment for Rotary Encoder Azimuth Preset support
 // #define FEATURE_EL_PRESET_ENCODER            // Uncomment for Rotary Encoder Elevation Preset support (requires FEATURE_AZ_PRESET_ENCODER above)
-#define OPTION_ENCODER_HALF_STEP_MODE
-#define OPTION_ENCODER_ENABLE_PULLUPS          // define to enable weak pullups on rotary encoder pins
-#define OPTION_INCREMENTAL_ENCODER_PULLUPS  // define to enable weak pullups on 3 phase incremental rotary encoder pins
+//#define OPTION_ENCODER_HALF_STEP_MODE
+//#define OPTION_ENCODER_ENABLE_PULLUPS          // define to enable weak pullups on rotary encoder pins
+//#define OPTION_INCREMENTAL_ENCODER_PULLUPS  // define to enable weak pullups on 3 phase incremental rotary encoder pins
 //#define OPTION_PRESET_ENCODER_RELATIVE_CHANGE   // this makes the encoder(s) change the az or el in a relative fashion rather then store an absolute setting
-#define OPTION_PRESET_ENCODER_0_360_DEGREES
+//#define OPTION_PRESET_ENCODER_0_360_DEGREES
 
 /* position sensor options */
-#define OPTION_AZ_POSITION_ROTARY_ENCODER_HARD_LIMIT // stop azimuth at lower and upper limit rather than rolling over
-#define OPTION_EL_POSITION_ROTARY_ENCODER_HARD_LIMIT // stop elevation at lower and upper limits rather than rolling over
+//#define OPTION_AZ_POSITION_ROTARY_ENCODER_HARD_LIMIT // stop azimuth at lower and upper limit rather than rolling over
+//#define OPTION_EL_POSITION_ROTARY_ENCODER_HARD_LIMIT // stop elevation at lower and upper limits rather than rolling over
 #define OPTION_AZ_POSITION_PULSE_HARD_LIMIT  // stop azimuth at lower and upper limit rather than rolling over
 #define OPTION_EL_POSITION_PULSE_HARD_LIMIT  // stop elevation at lower and upper limits rather than rolling over
 #define OPTION_POSITION_PULSE_INPUT_PULLUPS  // define to enable weak pullups on position pulse inputs
@@ -120,7 +120,7 @@
 // #define FEATURE_JOYSTICK_CONTROL          // analog joystick support
 // #define OPTION_JOYSTICK_REVERSE_X_AXIS
 // #define OPTION_JOYSTICK_REVERSE_Y_AXIS
-#define OPTION_EL_SPEED_FOLLOWS_AZ_SPEED    // changing the azimith speed with Yaesu X commands or an azimuth speed pot will also change elevation speed
+//#define OPTION_EL_SPEED_FOLLOWS_AZ_SPEED    // changing the azimith speed with Yaesu X commands or an azimuth speed pot will also change elevation speed
 // #define OPTION_PULSE_IGNORE_AMBIGUOUS_PULSES // for azimuth and elevation position pulse input feature, ignore pulses that arrive when no rotation is active
 // #define OPTION_BUTTON_RELEASE_NO_SLOWDOWN  // disables slowdown when CW or CCW button is released, or stop button is depressed
 // #define OPTION_SYNC_RTC_TO_GPS // if both realtime clock and GPS are present, synchronize realtime clock to GPS
@@ -168,27 +168,27 @@
 
 
 
-#define DEFAULT_DEBUG_STATE 0 // 1 = activate debug mode at startup; this should be set to zero unless you're debugging something at startup
+#define DEFAULT_DEBUG_STATE 1 // 1 = activate debug mode at startup; this should be set to zero unless you're debugging something at startup
 
 #define DEBUG_DUMP  // normally compile with this activated unless you're really trying to save memory
-// #define DEBUG_LOOP
-// #define DEBUG_BUTTONS
+ //#define DEBUG_LOOP
+ //#define DEBUG_BUTTONS
  #define DEBUG_SERIAL
 // #define DEBUG_SERVICE_REQUEST_QUEUE
 // #define DEBUG_EEPROM
 // #define DEBUG_AZ_SPEED_POT
-// #define DEBUG_AZ_PRESET_POT
+ #define DEBUG_AZ_PRESET_POT
 // #define DEBUG_PRESET_ENCODERS
 // #define DEBUG_AZ_MANUAL_ROTATE_LIMITS
 // #define DEBUG_EL_MANUAL_ROTATE_LIMITS
-// #define DEBUG_BRAKE
+ #define DEBUG_BRAKE
 // #define DEBUG_OVERLAP
 // #define DEBUG_DISPLAY
 // #define DEBUG_AZ_CHECK_OPERATION_TIMEOUT
 // #define DEBUG_TIMED_BUFFER
-// #define DEBUG_EL_CHECK_OPERATION_TIMEOUT
+ #define DEBUG_EL_CHECK_OPERATION_TIMEOUT
 // #define DEBUG_VARIABLE_OUTPUTS
-// #define DEBUG_ROTATOR
+ #define DEBUG_ROTATOR
 // #define DEBUG_SUBMIT_REQUEST
 // #define DEBUG_SERVICE_ROTATION
 // #define DEBUG_POSITION_ROTARY_ENCODER
@@ -212,7 +212,7 @@
 // #define DEBUG_GPS_SERIAL
 // #define DEBUG_OFFSET
 // #define DEBUG_RTC
-// #define DEBUG_PROCESS_YAESU
+ //#define DEBUG_PROCESS_YAESU
 // #define DEBUG_ETHERNET
 // #define DEBUG_PROCESS_SLAVE
 // #define DEBUG_MEMSIC_2125
