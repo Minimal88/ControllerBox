@@ -1,0 +1,15 @@
+//PCB1.0
+
+# pin conector -> conexion en el arduino (nombre señal)
+2 -> 6 (CW)   
+3 -> 8 (UP) 
+4 -> 7 (CCW)  
+5 -> 9 (DOWN) 
+
+1 ->  A1 (Elevación)
+6 ->  A0 (Azimuth)
+
+
+
+
+
